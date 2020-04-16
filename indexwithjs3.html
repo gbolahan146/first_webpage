@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Functions</title>
+</head>
+<body>
+    <span> <h2>Java script task3</h2>
+    <h6>Kindly Inspect element</h6></span>
+<script type="text/javascript">
+
+function numchanger(n){
+    var listnum = [];
+    for (i=1; i <= n ; i++){
+        if (i % 2 === 0 && i % 3 === 0 ){
+            listnum.push("yu-gi")
+        } else if(i % 3 === 0 && i % 5 === 0 ){
+            listnum.push("gi-oh")
+        } else if (i % 2 === 0 && i % 5 === 0 ){
+            listnum.push("yu-oh")
+        } else
+        if(i % 2 === 0){
+            listnum.push("yu");
+        }
+        //detect values divisible by 3
+        else if(i % 3 === 0){
+            listnum.push("gi");
+        }
+        else if(i % 5 === 0){
+            listnum.push("oh")
+        } else listnum.push(i)
+    }
+console.log(listnum);
+
+return listnum;
+}
+numchanger(100)
+
+numchanger(10)
+</script>
+</body>
+</html>
